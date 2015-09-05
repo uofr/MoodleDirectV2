@@ -1,7 +1,17 @@
-Moodle Direct v2 
+Moodle Direct v2
 ================
 
-Please be aware that the **Develop** branch should not be considered production ready and may contain bugs. It should be avoided in favor of the **Master** branch. 
+This collection of Moodle plugins is no longer updated. The folders have been split into separate repositories at:
+
+- https://github.com/jmcgettrick/moodle-mod_turnitintooltwo
+- https://github.com/jmcgettrick/moodle-plagiarism_turnitin
+- https://github.com/jmcgettrick/moodle-block_turnitin
+
+The code will remain here until our next release and we will endeavour to resolve currently open issues and pull requests. This page will remain but only as a pointer to the separate repositories.
+
+--------------
+
+Please be aware that the **Develop** branch should not be considered production ready and may contain bugs. It should be avoided in favor of the **Master** branch.
 
 To see what has changed in recent versions of Moodle Direct V2, see the [CHANGELOG](https://github.com/jmcgettrick/MoodleDirectV2/blob/master/CHANGELOG.md).
 
@@ -19,6 +29,8 @@ The Moodle direct version 2 package contains 3 folders for each respective plugi
 ### Module
 
 The main plugin code is located in the zip file in **mod/turnitintooltwo** and is required by both of the other plugins to work. To install, all you need to do is copy the turnitintooltwo directory in to your moodle installations module directory /mod. You should then go to `"Site Administration" > "Notifications"` and follow the on screen instructions.
+
+If you are using a pre 2.6 version of Moodle you will have to uncomment the initialising of $module in version.php before installing.
 
 To configure the plugin go to `"Site Administration" > "Plugins" > "Activity Modules" > "Turnitin Assignment 2"` and enter your Turnitin account Id, shared key and API URL.
 

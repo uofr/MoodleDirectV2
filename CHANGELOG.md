@@ -1,3 +1,79 @@
+### Date:       2015-June-29
+### Release:    v2015040106
+
+- Increase submission limit to Turnitin to 40Mb for newly created classes.
+- Show Rubric to Plagiarism plugin students before submission if applicable.
+- Update User code reinstated to update user's details in Turnitin.
+- Entry to Moodle logs added for a blank grading template submission.
+- Fixes:
+	- Export options no longer available once post date has passed for earliest assignment part.
+	- Change status codes for submissions made on Dan Marsden's previous plugin.
+	- Sorting by title no longer sorts on paper id.
+	- Selecting no grading type hides marks in Turnitin Assignment inbox.
+	- Deleted Moodle users are now accounted for when saving submission data.
+	- On attempting to restore a course, if the owner doesn't exist then it is reassigned to site admin. (Thanks to daparker26).
+	- Special characters that were causing errors removed from submission titles.
+	- Remove the large amounts of user data stored in user session in Turnitin Assignment.
+	- Avoid endless loops if error occurs on creating a temp file. (Thanks to Jonathon Fowler).
+	- Turnitin Assignments now inaccessible through URL if access is restricted.
+	- The correct attempt is now graded in Plagiarism plugin.
+	- Unsigned integers changed to signed on the install database script.
+	- Log text reworded when a student views the inbox.
+	- Temporary files are now removed correctly in the Plagiarism plugin. (Thanks to Dan Marsden).
+	- Resubmission warning no longer showing after due date.
+	- Gradelib file included in Turnitin Assignment cron.
+
+---
+
+### Date:       2015-June-11
+### Release:    v2015040105
+
+- Plagiarism plugin support for marking workflow.
+- Logging added for resubmissions.
+- Fixes:
+	- Several database queries fixed to offer full Oracle and SQL Server support.
+	- Course end date modal box fixed in Course Migration Tool.
+	- Empty submission successful message no longer shown for unsuccessful submisisons.
+	- Manual user enrolment to courses with existing Turnitin Assignments fixed.
+	- Files added in Moodle Assignment settings no longer submitted to Turnitin.
+	- Import to course no longer creates a new Turnitin class if Turnitin Assignments already exist.
+	- Users enrolled on class in Turnitin if they are not active users on account.
+
+---
+
+### Date:       2015-May-19
+### Release:    v2015040104
+
+- Unused code and unused legacy events removed.
+- EULA can be declined in a PP assignment with submissions then only processed by Moodle and not sent to Turnitin.
+- New exception handlers added to PP cron. (Thanks to Jeff Kerzner).
+- Allow plugin installation without configuration data. (Thanks to Chris Wharton).
+- Display all option added to unlink users table.
+- PP config code refactored to use Moodle config functions. (Thanks to Michael Hughes).
+- Submission deleted box added.
+- Tidying up of Turnitin Assignment inbox.
+- A digital receipt is now sent to a student when a submission is made to Turnitin (if SMTP is setup in Moodle).
+- Fixes:
+	- Files removed from PP submission are no longer included in average grade calculation. (Thanks to Tony Butler).
+	- Document Viewer no longer hangs in Safari.
+	- Undefined offsets on my homepage removed.
+	- Submit paper link misalignment.
+	- Undefined text on Quickmark Manager closing link.
+	- Unlink users refactored to remove unnecessary connection to Turnitin.
+	- PP Text content resubmissions no longer sent if there is no content.
+	- Refresh submission links shown after refreshing of parts.
+	- Part id being set incorrectly for multi-part assignments when refreshing updated submissions in Moodle.
+
+---
+
+### Date:       2015-April-15
+### Release:    v2015040102
+
+- Fixes:
+	- Fix continuous test connection that was impacting PP EULA.
+
+---
+
 ### Date:       2015-April-01
 ### Release:    v2015040101
 
